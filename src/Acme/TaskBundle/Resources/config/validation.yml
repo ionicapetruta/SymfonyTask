@@ -1,0 +1,4 @@
+Acme\TaskBundle\Entity\Task:
+    properties:
+        task:
+            - NotBlank: ~

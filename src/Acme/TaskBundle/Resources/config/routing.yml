@@ -1,3 +1,12 @@
 acme_task_homepage:
     path:     /hello/{name}
     defaults: { _controller: AcmeTaskBundle:Default:index }
+
+acme_task_addDepartment:
+    path:     /task/add-dep/
+    defaults: { _controller: AcmeTaskBundle:Default:addDepartment }
+
+acme_task_addEmployee:
+    path:     /task/add-emp/
+    defaults: { _controller: AcmeTaskBundle:Default:addEmployee }
+
