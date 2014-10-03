@@ -74,5 +74,29 @@ class DefaultController extends Controller
             )
         );
     }
+
+    public function editDepartmentAction()
+    {
+//        $departmentRepository = $this->getDoctrine()
+//            ->getRepository('AcmeTaskBundle:Department');
+//
+//        $departments = $departmentRepository->findAll();
+//        $params = array (
+//            'departments' => $departments,
+//        );
+//        return $this->render('@AcmeTask/Default/view.html.twig',
+//            $params
+        $departments = $this->getDoctrine()
+            ->getRepository('AcmeTaskBundle:Department')
+            ->findAll();
+
+        $params = array(
+            'departments' => $departments,
+        );
+
+        return $this->render(
+            '@AcmeTask/Default/view.html.twig',
+            $params
+        );
     }
 }

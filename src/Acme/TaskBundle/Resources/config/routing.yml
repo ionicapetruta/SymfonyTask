@@ -10,3 +10,6 @@ acme_task_addEmployee:
     path:     /task/add-emp/
     defaults: { _controller: AcmeTaskBundle:Default:addEmployee }
 
+acme_task_editDepartment:
+    path:     /task/edit-dep/
+    defaults: { _controller: AcmeTaskBundle:Default:editDepartment  }

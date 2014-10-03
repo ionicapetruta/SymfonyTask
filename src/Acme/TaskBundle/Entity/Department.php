@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Department
 {
     /**
-     * @ORM\OneToMany(targetEntity="Employee", mappedBy="departament")
+     * @ORM\OneToMany(targetEntity="Employee", mappedBy="department")
      */
     protected $employee;
 
